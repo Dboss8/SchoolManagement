@@ -36,7 +36,7 @@ export class Dashboard extends Component<{}, MyState>{
     }
 
     componentDidMount(){
-        axios.get("http://18.118.6.24:7060/list")
+        axios.get("http://18.221.78.132:7060/list")
         .then(res =>{
             
             const students = res.data
@@ -189,6 +189,6 @@ function renderStudent(st) {
     
 }
 function deleteStudent(id: any): void {
-    axios.post(`http://18.118.6.24:7060/delete/${id}`)
+    axios.post(`http://18.221.78.132:7060/delete/${id}`)
 }
 
