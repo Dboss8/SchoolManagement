@@ -31,7 +31,7 @@ export class CreationModal extends Component<MyProps>{
             teacher : data.get("teacher"),
         }
 
-        axios.post("http://3.137.195.46:7060/create", student)
+        axios.post("http://3.144.200.25:7060/create", student)
         this.props.toggle();
     }
 
